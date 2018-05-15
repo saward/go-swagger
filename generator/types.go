@@ -286,6 +286,7 @@ func (t *typeResolver) resolveFormat(schema *spec.Schema, isAnonymous bool, isRe
 			default:
 				result.IsNullable = t.IsNullable(schema)
 			}
+			result.IsNullable = true
 			return
 		}
 	}
